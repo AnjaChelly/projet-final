@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#titre-principale{ 
+    background-color: #8CC084;
+    color: white;
+    height: 200px;
+}
+
+h1 { 
+    color: white;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+#desc-titre{ padding-left: 60px;
+color: white;}
+
+#image-titre{ 
+    width: 245px;
+    height: 202px;
+    position: absolute;
+    left: 750px;
+    top: 61px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 15px;
+}
+
+section {
+    border: 1px solid #cfccc8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h2 {
+    color: #54834c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list1 {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.list1:hover {
+    text-decoration: underline;
+}
+
+h3{ color: #7aaa72;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+#content { display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "diet diet diet diet exc"
+    "diet diet diet diet sleep"
+    "diet diet diet diet stress"
+    "diet diet diet diet vit";
+    padding-top: 20px;
+}
+
+#diet{grid-area:diet;}
+#exercise{grid-area: exc;}
+#sleep{grid-area: sleep;}
+#stress{grid-area: stress;}
+#vitamins{grid-area: vit;}
+
+
+#diet img{width: 95%;
+height: 400px;
+padding-left: 15px;
+border: none;
+}
+
+.parag1{ margin-top: 10px;
+margin-left: 20px;}
+
+.video{width:90%;
+border: none;
+border-radius: 5px;
+}
+
+.parag {font-size : 15px;}
+
+.video-container {
+    max-width: 800px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section {margin-left: 20px;}
+
+.comment-list{display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.comment-author{font-weight: bold;
+font-size: 15px;
+}
+
+#comment{width: 450px;
+height: 25px;}
+
+#comment-form{display: flex;
+flex-direction: column;
+gap:5px;}
+
+#comment-form button{width: 200px;
+height: 30px;
+border-radius: 10px;
+font-weight: bold;
+font-size: 15px;
+text-align: center;
+margin-top: 15px;}
+
+.subscribe-section {
+    margin-top: 10px;
+    display: flex;
+}
+
+.subscribe-btn {
+    background-color: #e9e1d9;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+button {
+    padding: 10px;
+    background-color: #e9e1d9;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8CC084;
+}
+
+.like-dislike-icons {
+    display: flex;
+    margin-left: 450px;
+    
+}
+
+.like-icon, .dislike-icon {
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+.partage{margin-left: 15px;}
+
+.share-btn {
+    background-color: #e9e1d9;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-left:15px ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e9e1d9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+.share-dropdown {
+    position: relative;
+    margin-left: 15px;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.share-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#ovulation-content {
+    background-color: #cfccc8;
+    padding-top: 15px;
+    height: 370px;
+    margin-top: 20px;
+}
+
+#ovulation-content img{width: 70px;
+height: 70px;
+padding-left: 500px;
+padding-top: 20px;
+}
+
+h3{text-align: center;}
+
+#ovulation-info{padding-left: 390px;}
+
+#ovulation-calendar{display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;}
+
+#ovulation-result {
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 700px;
+}
+
+#ovulation-result span {
+    font-weight: bold;
+    color: #54834c;
+}
+
+/* Styles pour le calendrier d'ovulation */
+#datepicker {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* Styles pour le résultat du calcul d'ovulation */
+#ovulation-result {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#recipe-content {
+    margin-top: 20px;
+}
+
+.icon{width: 10%;
+   padding-left: 475px;}
+
+#recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.recipe-card{display: flex;
+flex-direction: row;
+gap:20px;
+align-items: center;}
+
+.recipe-image {
+    width:10%;
+    border-radius: 8px;
+}
+
+#healthy-info{text-align: center;}

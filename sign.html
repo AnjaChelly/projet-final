@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="sign.js"></script>
+    <script src="https://kit.fontawesome.com/485697cdf7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<div  id="container">
+    <div id="header-container"></div>
+</div>
+<div id="container1"> 
+    
+    <div id="logsign">
+        <div id="col1" class="button" onclick="onClickLogin();"><i class="fas fa-sign-in-alt"></i>  Log in </div>
+        <div id="col2" class="button" onclick="onClickSignUp()"> <i class="fas fa-user-plus"></i>  Sign up</div>
+    </div>
+
+        <div id="col3" > 
+        <h1 class="signtitle"> How can Be MOM help you!</h1>
+        <div>Select the phase that best describes you needs.<br>
+        <strong>Don't worry</strong> you can always update later</div>
+
+        <div id="featured-articles">
+            <div class="article">      
+              <label for=""><input type="radio" value="">Preparing for preg</label>
+                <img src="sign up/icon1.png" alt="image 1">
+            </div>
+            <div class="article">
+                <label for="">  <input type="radio" value="">Tracking a pregnancy</label>
+                <img src="sign up/img2.webp" alt="image 2">
+            </div>
+            <div class="article">
+                <label for=""> <input type="radio" value="">Postpartum recovery</label>
+                <img src="sign up/img3.webp" alt="image 3">
+            </div>
+        </div>
+        <button class="btn" type="button" onclick="afficherPopup()" >Next <i class="fas fa-arrow-right"></i>
+        </button>
+        </div>   
+ </div>
+
+<form id="popup">
+    <h1>Sign Up</h1>
+    <div class="sign">
+    <label for="username">Username:<input type="text" id="username" name="username" required></label>
+    <label for="email">Email:<input type="email" id="email" name="email" required></label>
+    <label for="password">Password:<input type="password" id="password" name="password" required></label>
+    <label for="confirmpassword">Confirm Password:<input type="password" id="confirmPassword" name="password" required></label>
+    </div>
+    <input  type="submit" value="Sign Up" onclick="showValidationPopup()">
+    <p>Already have an account? </p>
+    <button onclick="fermerPopup()"  class="closebtn"> <i class="fas fa-times"></i></button>
+  </form>
+
+<form id="validationPopup">
+    <h2>Validation Successful <i class="fas fa-check-circle"></i></h2>
+    <p>Your account has been created successfully! </p>
+    <button onclick="fermerValidationPopup()" class="closebtn"><i class="fas fa-times"></i></button>
+</form>
+ 
+<div  id="container2">
+    <div id="footer-container"></div>
+  </div>
+  
+</body>
+</html>

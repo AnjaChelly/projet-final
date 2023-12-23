@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+
+#titre-principale{ width: 100%;
+    background-color: #8CC084;
+    color: white;
+    height: 200px;
+}
+
+h1 { 
+    color: white;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+#desc-titre{ padding-left: 60px;
+color: white;}
+
+#image-titre{ 
+    width: 245px;
+    height: 202px;
+    position: absolute;
+    left: 750px;
+    top: 61px;
+}
+
+h2 { text-align: center;
+    color: #54834c;
+}
+.pregnancy-weeks { 
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+
+.week-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.show-button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.show-less { 
+    left: 110px;
+}
+
+.show-more {
+    right: 100px;
+}
+.week-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.week-icon {
+    font-size: 20PX;
+    margin-bottom: 5px;
+}
+
+.week-number {
+    font-weight: bold;
+}
+
+.week-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.week-item a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.card {
+    width: 250px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #8CC084,#54834c,#96b391);
+  }
+
+  .card {
+    width: 520px;
+    height: 80px;
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-left: 350px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+  }
+
+  .gift-icon {
+    position: absolute;
+    top: 37px;
+    right: 17px;
+    font-size: 50px;
+  }
+
+  @keyframes cardAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .card {
+    animation: cardAnimation 2s ease infinite; /* Adjust the animation duration as needed */
+  }
+
+  
+.featured-articles {
+    display: flex;
+    flex-direction:row;
+    height: 300px;
+    margin-top: 30px;
+    gap: 20px;
+    margin-left: 320px;
+    text-align: center;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 270px;
+    border: 2px solid #cfccc8;
+    border-radius: 10px;    
+}
+
+.article img{
+width: 200px;
+height: 210px;
+border-radius: 10px;
+}
+
+.article p{ 
+    font-weight: bold;
+}
+
+ main {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);  
+    gap: 20px;
+    padding-left: 30px;
+}
+
+section { width: 850px;
+    border: 1px solid #cfccc8;
+    border-radius: 8px;
+    padding-left: 20px;
+    background-color: #edf5ebbe;   
+}
+
+h2 { color: #54834c;}
+
+.texte{
+    padding-left: 10px;
+    color: #54834c;
+font-size: 30px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 15px;}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list {font-size: 18px;
+font-weight: bolder;
+padding-bottom: 10px;}
+
+.list1 {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.list1:hover {
+    text-decoration: underline;
+}
+
+#img-section1{
+    width: 260px;
+position: absolute;
+left:630px;
+top:1080px;
+border-radius: 40%;}
+
+#img-section2{
+    width: 260px;
+position: absolute;
+left:630px;
+top:1365px;
+border-radius: 40%;}
+
+#img-section3{
+    width: 260px;
+position: absolute;
+left:630px;
+top:1640px;
+border-radius: 40%;}
+
+#img-section4{
+    width: 260px;
+position: absolute;
+left:630px;
+top:1910px;
+border-radius: 40%;}
+

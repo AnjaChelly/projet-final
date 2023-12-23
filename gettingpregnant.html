@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GettingPregnant</title>
+    <link rel="stylesheet" href="gettingpregnant.css">
+    <script src="gettingpregnant.js"></script>
+    <script src="https://kit.fontawesome.com/485697cdf7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div  id="container">
+        <div id="header-container"></div>
+    </div>
+
+        <div  id="titre-principale">
+           
+            <h1>Getting Pregnant</h1>
+            <div id="desc-titre">What you need to know when you're trying to conceive to prepare <br>
+            for the healthiest pregnancy possible.</div>
+            <img  id="image-titre" src="acceuil/image1" alt="">
+        </div>
+
+        <main>
+            <section>
+                <h2>Preconception Health  <i class="fas fa-file-alt"></i></h2>
+                <ul>
+                    <li class="list1" onclick="showContent('diet')">Eat a healthy diet  <i class="fas fa-chevron-right"></i></li>
+                    <li class="list1" onclick="showContent('exercise')">Exercise regularly  <i class="fas fa-chevron-right"></i></li>
+                    <li class="list1" onclick="showContent('stress')">Manage stress levels  <i class="fas fa-chevron-right"></i></li>
+                    <li class="list1" onclick="showContent('sleep')">Get enough sleep  <i class="fas fa-chevron-right"></i></li>
+                    <li class="list1" onclick="showContent('vitamins')">Take prenatal vitamins  <i class="fas fa-chevron-right"></i></li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Tracking Ovulation  <i class="fas fa-file-alt"></i></h2>
+                <ul>
+                    <li  class="list1" onclick="showContent('ovulation-info')">Learn about ovulation  <i class="fas fa-chevron-right"></i></li>
+                    <li  class="list1" onclick="showContent('ovulation-calendar')">Ovulation Calendar  <i class="fas fa-chevron-right"></i></li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Healthy Lifestyle  <i class="fas fa-file-alt"></i></h2>
+                <ul>
+                    <li  class="list1" onclick="showContent('healthy-info')">Why a healthy lifestyle is important  <i class="fas fa-chevron-right"></i></li>
+                    <li class="list1" onclick="showContent('recipe-list')">Simple and Healthy Recipes  <i class="fas fa-chevron-right"></i></li>
+                </ul>
+            </section>
+        </main>
+       
+        <h3>Preconception Health  <i class="fas fa-heartbeat"></i> <i class="fas fa-genderless"></i></h3>
+        <div id="content">
+            <div id="diet" >
+                <img  src="getting pregnant/diet.png" >
+                <div class="parag1">Maintaining a healthy diet before conception is crucial for both....</div>
+                
+                <div class="subscribe-section">
+                    <button class="subscribe-btn"><i class="fas fa-rss"></i> S'abonner </button>
+                    <div class="like-dislike-icons">
+                        <button class="like-icon"><i class="fa-solid fa-thumbs-up"></i> 438 </button>
+                        <button class="dislike-icon"><i class="fa-solid fa-thumbs-down"></i> 10</button>
+                    </div>
+                    <button class="partage"><i class="fas fa-share"></i>  Partager</button>
+                    <div class="share-dropdown">
+                        <button class="share-btn"><i class="fa-solid fa-bars"></i></button>
+                        <ul class="dropdown-content">
+                            <li><i class="fa-solid fa-download"></i> Télécharger</li>
+                            <li><i class="fas fa-save"></i> Extrait</li>
+                            <li><i class="fas fa-clipboard"> </i> Enregistrer</li>
+                            <li> <i class="fas fa-flag"></i> Signaler</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comments-section">
+
+                    <h2> 14 Commentaires  <i class="fas fa-comments"></i></h2> 
+                    
+                    <ul class="comment-list">
+                        
+                        <li>
+                            <span class="comment-author"><i class="fas fa-user"></i> Anja Chelly: </span><br>
+                            <span class="comment-text">C'est un super commentaire!</span>
+                        </li>
+                        <li>
+                            <span class="comment-author"><i class="fas fa-user"></i> Lilia Bahroun:  </span><br>
+                            <span class="comment-text">J'aime vraiment cette vidéo!</span>
+                        </li>
+                    </ul>
+                    <form id="comment-form">
+                        <textarea id="comment" name="comment" placeholder="Ajouter un commentaire:" required></textarea>
+                        <button type="submit">Commenter   <i class="fas fa-comment"></i></button>
+                    </form>
+                </div>
+        
+               
+            </div>
+           
+            <div id="exercise">
+                <img class="video" src="getting pregnant/exercise.png" >
+                <div class="parag">Regular exercise can improve fertility and overall health....</div>
+
+            </div>
+            <div id="stress">
+                <img class="video" src="getting pregnant/stress.png" >
+                <div class="parag">Managing stress is important for preconception health....</div>
+
+            </div>
+            <div id="sleep">
+                <img class="video" src="getting pregnant/sleep.png" >
+                <div class="parag">Adequate sleep is crucial for hormonal balance and ....</div>
+
+            </div>
+            <div id="vitamins">
+                <img  class="video" src="getting pregnant/vitamins.png">
+                <div class="parag"></div>Taking prenatal vitamins is essential to ensure that your body ...</div>         
+            </div>
+        
+        </div>
+        
+        <div id="ovulation-content">
+            <h3>Tracking Ovulation <i class="fa-solid fa-calendar-days"></i></h3>
+            <div id="ovulation-info"> 
+                <p>Understanding your ovulation cycle is important for conceiving. <br>
+             Ovulation usually occurs around the middle of your menstrual cycle.</p>
+                
+            </div>
+    
+            <div id="ovulation-calendar" >
+                <!-- Calendrier interactif pour le calcul de l'ovulation -->
+                <label for="datepicker">Select a date:
+                <input type="date" id="datepicker"></label>
+                <button onclick="calculateOvulation()">Calculate Ovulation</button>
+                <!-- Add more calendar features as needed -->
+            </div>
+    
+            <div id="ovulation-result">
+                <!-- Résultat du calcul de l'ovulation -->
+                <p>Your ovulation <strong>period</strong>  is estimated to be from 
+                <span id="ovulation-start"></span> to <span id="ovulation-end"></span>.</p>
+            </div>
+        </div>
+        <div id="recipe-content">
+            <h3>Healthy Lifestyle  <i class="fas fa-utensils"></i> <i class="fas fa-child"></i></h3>
+            <div id="healthy-info" >
+                <!-- Contenu informatif sur le mode de vie sain -->
+                <p>Maintaining a healthy lifestyle is crucial for overall well-being. <br>
+                    It can improve fertility, support a healthy pregnancy, 
+                    and contribute to long-term health.</p>
+            </div>
+    
+            <div id="recipe-list">
+                <!-- Liste de recettes saines -->
+                
+                <div class="recipe-card">
+                    <img src="getting pregnant/receipe1.png" alt="Recipe 1" class="recipe-image">
+                    <div>
+                    <h4>Vegetarian Quinoa Salad</h4>
+                <div>A delicious salad made with quinoa, fresh vegetables, and a light vinaigrette.</div>
+                </div>  </div>
+
+                <div class="recipe-card">
+                    <img src="getting pregnant/receipe2.png" alt="Recipe 2" class="recipe-image">
+                    <div>
+                    <h4>Grilled Salmon with Lemon</h4>
+                    <div>Enjoy with grilled salmon seasoned,fresh lemon and herbs.</div>
+                </div> </div>
+                
+            </div>
+        </div>
+    
+        <div  id="container2">
+            <div id="footer-container"></div>
+        </div>
+
+</body>
+</html>

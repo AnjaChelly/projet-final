@@ -1,0 +1,133 @@
+body{margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+width: 100vw;
+}
+
+/* premier contenue*/
+#image {
+    display: flex;
+  }
+#image img {
+        width:100%;
+        height: 500px; 
+}
+
+/* deuxieme contenue*/
+
+h1{padding-top: 10px;
+   text-align: center;
+   color: #8CC084;
+}
+
+.Preg,.year{color: #7aaa72;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    background-color:#e9e1d9 ;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-container {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+/* Style pour le bouton "show more" */
+.show-more-btn { 
+    padding: 5px;
+    background-color: #e9e1d9;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.featured-articles {
+    display: flex;
+    flex-direction:row;
+    height: 300px;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+    border: 2px solid #cfccc8;
+    border-radius: 10px;    
+}
+
+.article img{
+width: 200px;
+height: 210px;
+border-radius: 10px;
+}
+
+.article p{ 
+    font-weight: bold;
+}
+
+.article a { font-size: 15px;
+    color:#503825;  
+}
+
+.visite {padding-left: 45px;
+font-size: 20px;}
+
+.visite a {color: #b48b69;}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    width: 1000px; 
+    margin: 0 auto; /* Centrer la grille horizontalement */
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #cfccc8;
+    height: 250px;
+}
+
+.photo img {
+    width: 100%; 
+    height: 170px;
+}
+
+.description{padding: 10px;
+font-weight: bold;
+font-size: 20px;
+color: #aa9a3c;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #e9e1d9;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
